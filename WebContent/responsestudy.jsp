@@ -15,8 +15,14 @@
 // 		out.flush();   在response页面如果有flush()步骤，则response会被提交，不能继续调用response的方法。
 		PrintWriter p = response.getWriter();
 		p.println("大家都好");
-		response.sendRedirect("login2.jsp");
+// 		response.sendRedirect("login2.jsp");
+		request.getRequestDispatcher("login2.jsp").forward(request, response);
 	%>
-
+	
+	<%-- <% for(int fontsize=1;fontsize<4;fontsize++ ){ %>
+	<font color="red" size="<%=fontsize %>">
+	bigger than bigger
+	</font><br>
+	<%} %> --%>
 </body>
 </html>
