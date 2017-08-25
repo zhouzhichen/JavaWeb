@@ -10,11 +10,19 @@
 <h1>登陆成功</h1>
 <% request.setCharacterEncoding("UTF-8"); %>
 用户名：<%=request.getParameter("name") %><br>
-密码：<%=request.getParameter("password") %><br>
+<%-- 密码：<%=request.getParameter("password") %><br>
 兴趣爱好:<% String[] str=request.getParameterValues("like");
+
 for(String str1:str){
 	out.println(str1);
 }
-%>
+%>--%>
+获取MIME<%=request.getContentType() %><br>
+ 获取协议名<%=request.getProtocol() %><br>
+ 获取主机名<%=request.getServerName() %><br>
+ 获取端口名<%=request.getServerPort() %><br>
+ 获取文件长度<%=request.getContentLength() %><br>
+ 获取真实路径<%=request.getContextPath() %><br>
+ 获取请求路径<%=request.getRealPath("login2.jsp") %><br>
 </body>
 </html>

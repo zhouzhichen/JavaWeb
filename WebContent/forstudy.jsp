@@ -32,5 +32,6 @@
 				<td><input type="submit" value="提交"><td>
 		</table>
 	</form>
+	<a href="responsestudy.jsp">成功连接</a>
 </body>
 </html>
