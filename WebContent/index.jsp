@@ -72,6 +72,6 @@
 
 	<hr>
 
-
-
+<a href="Myjavabean.jsp?name=zhang&password=123456">zzc</a><br>
+<!-- 以上是用get方法把需要的参数给添加到了URL里面，连接的页面是Myjavabean -->
 </body>
